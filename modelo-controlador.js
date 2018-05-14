@@ -25,7 +25,7 @@ class NumeroHumano{
 
 class NumeroMaquina{
     constructor(){
-        this.numero = Math.floor(Math.random() * 100 + 1);
+        this.numero = Math.floor((Math.random() * 100) + 1);
     }
     adivinarNumero(intento){
         if (intento > this.numero){
@@ -47,7 +47,7 @@ let controles = document.getElementById("controles");
 function adivinoYo() { 
     let numMaquina =  new NumeroMaquina();
     borrarContenido(lista);
-    nuevoElementoLista("Adiviná el número secreto. Está entre 1 y 100.");
+    nuevoElementoLista("Adiviná el número secreto");
     borrarContenido(controles);
     let input = document.createElement("INPUT");    
     input.setAttribute("type", "text");
@@ -72,7 +72,7 @@ function intentar(input, numMaquina){
     } else if (respuesta == "mayor"){
         nuevoElementoLista("El número secreto es menor que " + intento);
     } else if (respuesta == "igual") {
-        nuevoElementoLista("¡Ganaste! " + intento + " era el número secreto");
+        nuevoElementoLista("¡Ganaste! " + intento + " es el número secreto");
         borrarContenido(controles);
     }
     input.value = "";

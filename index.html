@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adivinador</title>
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet"> </head>
 <body>
     <h1>Adivinador de número</h1>
-    <button onClick= 'adivinoYo()'>¡Quiero adivinar!</button>
-    <button onClick= 'adivinaMaquina()'>Que adivine la máquina</button>
+    <h3>Adiviná el número secreto creado por la máquina, o pensá un número vos y hacé que la máquina lo adivine. El número secreto siempre es entre 1 y 100.</h3>
+    <div class="contenedor">
+        <button onClick= 'adivinoYo()' class="boton-blanco">¡Quiero <br>adivinar!</button>
+        <button onClick= 'adivinaMaquina()' class="boton-blanco">Que adivine <br>la máquina</button>
+    </div>
     <ul id="lista"></ul>
     <div id="controles"></div>
+    <footer></footer>
     <script src="modelo-controlador.js"></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+
+body{
+    background-color: #16A086;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+h1{
+    text-align: center;
+    font-size: 4vw;
+}
+
+h3 {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.contenedor{
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    margin-left: 2%;
+    width: 20%;
+    color:white;
+    background-color: #16A086;
+    border: 2px solid white;
+    padding: 1%;
+    border-radius: 3%;
+}
+
+.boton-blanco{
+    background-color: white;
+    color: #16A086;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+ul{
+    margin-top: 3%;
+    width: 97%;
+    text-align: center;
+}
+
+li{
+    font-weight: 400;
+    list-style-type: none;
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+#controles{
+    margin-top: 2%;
+    text-align: center;
+}
+
+footer{
+    height: 50px;
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size:6vw;
+    }
+
+    h3{  
+        width: 80%;
+        margin-left: 10%;       
+        font-size: 3vw;
+    }
+    button{
+        width: 30%;
+    }
+    .boton-blanco{
+        width: 20% !important;
+    }
+    li{
+        margin-left: -5%;
+        margin-top: 2%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    h3{         
+        font-size: 5vw;
+    }
+    button{
+        width: 25%;
+    }
+    .boton-blanco{
+        width: 30% !important;
+    }
+
+
+    li{
+        margin-left: -10%;
+        font-size: 5vw;
+    }
+}
