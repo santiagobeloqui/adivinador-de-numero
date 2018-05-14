@@ -6,18 +6,18 @@ class NumeroHumano{
         this.min = 1;
         this.max = 101;
     }
-    adivinarNumero(respuesta){
-        if (respuesta == undefined){
+    adivinarNumero(respuestaUsuario){
+        if (respuestaUsuario == undefined){
             return this.intento;            
-        } else if (respuesta == "mayor"){
+        } else if (respuestaUsuario == "mayor"){
             this.min = this.intento;
             this.intento = Math.floor(this.min + (this.max -this.min) / 2);
             return this.intento;   
-        } else if (respuesta == "menor"){
+        } else if (respuestaUsuario == "menor"){
             this.max = this.intento;
             this.intento = Math.floor(this.min + (this.max -this.min) / 2);
             return this.intento;
-        } else if (respuesta == "igual"){
+        } else if (respuestaUsuario == "igual"){
             return "ganar";
         }
     }
@@ -127,5 +127,6 @@ function nuevoBoton(texto){
     controles.appendChild(button);
     return button;
 }
+
 
 
